@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="uk.co.ilee.gamecenter" version="0.2.5">
+    <name>Game Center</name>
+    <author></author>
+    <description>Cordova Game Center Plugin iOS.</description>
+    <keywords></keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <js-module src="www/gamecenter.js" name="GameCenter">
+        <clobbers target="gamecenter" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="GameCenter">
+                <param name="ios-package" value="GameCenter" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/GameCenterPlugin.h" />
+        <source-file src="src/ios/GameCenterPlugin.m" />
+        <framework src="GameKit.framework" />
+    </platform>
+</plugin>
