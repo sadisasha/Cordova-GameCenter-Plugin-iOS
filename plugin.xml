@@ -16,8 +16,8 @@
                 <param name="ios-package" value="GameCenter" />
             </feature>
         </config-file>
-        <header-file src="src/ios/GameCenterPlugin.h" />
-        <source-file src="src/ios/GameCenterPlugin.m" />
+        <header-file src="src/ios/GameCenter.h" />
+        <source-file src="src/ios/GameCenter.m" />
         <framework src="GameKit.framework" />
     </platform>
 </plugin>
