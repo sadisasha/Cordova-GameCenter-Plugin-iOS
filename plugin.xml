@@ -12,12 +12,12 @@
     </js-module>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="GameCenter">
-                <param name="ios-package" value="GameCenter" />
+            <feature name="GameCenterPlugin">
+                <param name="ios-package" value="GameCenterPlugin" />
             </feature>
         </config-file>
-        <header-file src="src/ios/GameCenter.h" />
-        <source-file src="src/ios/GameCenter.m" />
+        <header-file src="src/ios/GameCenterPlugin.h" />
+        <source-file src="src/ios/GameCenterPlugin.m" />
         <framework src="GameKit.framework" />
     </platform>
 </plugin>
